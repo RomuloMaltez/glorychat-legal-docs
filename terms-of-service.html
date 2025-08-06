@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso - GloryChat.ai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            padding: 0.75rem 1rem;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+        
+        .back-button {
+            margin-right: 0.75rem;
+            color: #374151;
+            text-decoration: none;
+            font-size: 1.5rem;
+            line-height: 1;
+            transition: color 0.2s ease;
+        }
+        
+        .back-button:hover {
+            color: #6b7280;
+        }
+        
+        .header h1 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #374151;
+        }
+        
+        .content {
+            flex: 1;
+            overflow-y: auto;
+        }
+        
+        .document {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        
+        .title-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .title-section h1 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1e3a8a;
+        }
+        
+        .title-section .last-update {
+            color: #6b7280;
+        }
+        
+        .section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+        }
+        
+        .section h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+        }
+        
+        .section h4 {
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section p {
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+        
+        .section ul {
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section li {
+            margin-bottom: 0.25rem;
+        }
+        
+        .plan-card {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid;
+            margin-bottom: 1.5rem;
+        }
+        
+        .plan-free {
+            background-color: #f9fafb;
+            border-color: #e5e7eb;
+        }
+        
+        .plan-basic {
+            background-color: #eff6ff;
+            border-color: #bfdbfe;
+        }
+        
+        .plan-plus {
+            background-color: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+        
+        .plan-pro {
+            background-color: #faf5ff;
+            border-color: #d8b4fe;
+        }
+        
+        .plan-card h4 {
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .plan-card .promo {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+        
+        .plan-card ul {
+            margin-left: 1rem;
+        }
+        
+        .plan-card li {
+            margin-bottom: 0.25rem;
+        }
+        
+        .highlight-amber {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #fbbf24;
+            background-color: #fffbeb;
+            margin-top: 1.5rem;
+        }
+        
+        .highlight-amber h4 {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-amber p {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .highlight-blue {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #bfdbfe;
+            background-color: #eff6ff;
+            margin-top: 1rem;
+        }
+        
+        .highlight-blue p {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-blue strong {
+            font-weight: 600;
+        }
+        
+        .grid {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .card {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid;
+        }
+        
+        .card-green {
+            background-color: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+        
+        .card-red {
+            background-color: #fef2f2;
+            border-color: #fecaca;
+        }
+        
+        .card h4 {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-green h4 {
+            color: #16a34a;
+        }
+        
+        .card-red h4 {
+            color: #dc2626;
+        }
+        
+        .card ul {
+            margin-left: 0;
+        }
+        
+        .contact-link {
+            color: #2563eb;
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+        
+        .contact-link:hover {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        
+        .text-green {
+            color: #16a34a;
+        }
+        
+        .text-red {
+            color: #dc2626;
+        }
+        
+        @media (max-width: 768px) {
+            .document {
+                padding: 1rem;
+            }
+            
+            .title-section h1 {
+                font-size: 1.5rem;
+            }
+            
+            .section h2 {
+                font-size: 1.25rem;
+            }
+            
+            .section h3 {
+                font-size: 1.125rem;
+            }
+            
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="index.html" class="back-button">←</a>
+            <h1>Termos de Uso</h1>
+        </header>
+        
+        <div class="content">
+            <div class="document">
+                <div class="title-section">
+                    <h1>Termos de Uso - GloryChat.ai</h1>
+                    <p class="last-update">Última Atualização: Junho de 2025</p>
+                </div>
+
+                <section class="section">
+                    <h2>1. Introdução</h2>
+                    <p>
+                        Bem-vindo ao GloryChat.ai ("o Aplicativo"), desenvolvido pela Beyond Tech (I.S.). 
+                        O GloryChat.ai oferece um assistente espiritual personalizado alimentado por 
+                        inteligência artificial, fornecendo orientação baseada na Bíblia Sagrada, 
+                        adaptada à sua denominação cristã.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>2. Aceitação dos Termos</h2>
+                    <p>
+                        Ao usar o GloryChat.ai, você confirma ter pelo menos 18 anos e aceita estar 
+                        vinculado a estes Termos de Uso.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>3. Planos e Assinaturas</h2>
+                    
+                    <h3>Planos Disponíveis:</h3>
+
+                    <div class="plan-card plan-free">
+                        <h4>Plano Gratuito (R$ 0,00/para sempre):</h4>
+                        <ul>
+                            <li>Chat com IA Cristã: acesso limitado</li>
+                            <li>Versículo do dia</li>
+                            <li>Reflexão diária personalizada</li>
+                            <li>Personalização por denominação cristã</li>
+                            <li>Orações guiadas: acesso limitado</li>
+                            <li>Anúncios discretos</li>
+                            <li class="text-red">❌ Nova reflexão (versões alternativas)</li>
+                            <li class="text-red">❌ Acesso a planos de leitura</li>
+                            <li class="text-red">❌ Suporte padrão por email</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card plan-basic">
+                        <h4>Premium Básico (R$ 19,90/mês):</h4>
+                        <p class="promo">
+                            Preço promocional de lançamento (valor normal: R$ 24,90)
+                        </p>
+                        <ul>
+                            <li>Chat com IA Cristã: acesso moderado</li>
+                            <li>Versículo do dia personalizado</li>
+                            <li>Reflexão diária personalizada</li>
+                            <li>Nova reflexão (versões alternativas)</li>
+                            <li>Reflexões ilimitadas</li>
+                            <li>Personalização por denominação cristã</li>
+                            <li>Orações personalizadas: acesso moderado</li>
+                            <li>Sem anúncios</li>
+                            <li class="text-green">✅ Acesso a planos de leitura básicos</li>
+                            <li class="text-green">✅ Suporte padrão por email</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card plan-plus">
+                        <h4>Premium Plus (R$ 39,90/mês ou R$ 399,00/ano):</h4>
+                        <p class="promo">
+                            Economia de R$ 79,80 no plano anual
+                        </p>
+                        <ul>
+                            <li>Chat ilimitado com IA mais avançada</li>
+                            <li>Reflexão diária personalizada</li>
+                            <li>Reflexões por temas específicos</li>
+                            <li>Histórico de reflexões favoritas</li>
+                            <li>Nova reflexão (versões alternativas)</li>
+                            <li>Personalização por denominação cristã</li>
+                            <li>Orações personalizadas ilimitadas</li>
+                            <li>Planos de leitura bíblica avançados</li>
+                            <li>Sem anúncios</li>
+                            <li>Downloads de conteúdo para uso offline</li>
+                            <li>Notificações personalizadas</li>
+                            <li>Suporte prioritário</li>
+                            <li class="text-green">✅ Acesso a estudos bíblicos exclusivos</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card plan-pro">
+                        <h4>Premium Profissional (R$ 49,90/mês):</h4>
+                        <p class="promo">
+                            Ideal para líderes religiosos e educadores
+                        </p>
+                        <ul>
+                            <li>Todas as funcionalidades do Premium Plus</li>
+                            <li class="text-green">✅ Ferramentas para sermões e estudos</li>
+                            <li class="text-green">✅ Biblioteca teológica expandida</li>
+                            <li class="text-green">✅ Funcionalidades para comunidades</li>
+                            <li class="text-green">✅ Análises e insights de uso</li>
+                            <li class="text-green">✅ Suporte VIP</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-amber">
+                        <h4>Flexibilidade dos Planos:</h4>
+                        <p>
+                            Os limites e funcionalidades de cada plano são determinados pela plataforma e podem ser otimizados para melhor experiência do usuário, mantendo sempre o valor e propósito de cada categoria de assinatura.
+                        </p>
+                    </div>
+
+                    <h4>Condições de Assinatura:</h4>
+                    <ul>
+                        <li>Renovação automática até cancelamento</li>
+                        <li>Cancele a qualquer momento nas configurações</li>
+                        <li>Acesso mantido até final do período pago</li>
+                        <li>Mudanças entre planos permitidas a qualquer momento</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>4. Exclusão de Conta e Dados</h2>
+                    
+                    <h3>Direito à Exclusão:</h3>
+                    <p>
+                        Conforme a Lei Geral de Proteção de Dados (LGPD), você tem o direito de solicitar 
+                        a exclusão de sua conta e dados pessoais a qualquer momento através das 
+                        configurações do aplicativo.
+                    </p>
+
+                    <h3>Processo de Exclusão:</h3>
+                    <ul>
+                        <li>A exclusão é processada em até 15 dias úteis</li>
+                        <li>Todos os dados pessoais são permanentemente removidos</li>
+                        <li>Conversas, notas e progresso são irreversivelmente perdidos</li>
+                        <li>Não é possível recuperar a conta após a exclusão</li>
+                    </ul>
+
+                    <h3>Impacto em Assinaturas Premium:</h3>
+                    <div class="highlight-amber">
+                        <p>
+                            <strong>Importante:</strong> A exclusão de conta resulta no cancelamento 
+                            imediato da assinatura sem direito a reembolso proporcional.
+                        </p>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Assinatura é cancelada no momento da exclusão</li>
+                            <li>Não há reembolso do período não utilizado</li>
+                            <li>Acesso premium é perdido imediatamente</li>
+                            <li>Futuras cobranças são interrompidas</li>
+                        </ul>
+                    </div>
+
+                    <h3>Alternativa - Cancelamento de Assinatura:</h3>
+                    <p>
+                        Se você deseja apenas cancelar sua assinatura premium mas manter sua conta, 
+                        use a opção "Cancelar Assinatura" nas configurações. Isso preservará seus 
+                        dados e permitirá continuar usando o plano gratuito.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>5. Política de Reembolso</h2>
+                    
+                    <h3>Reembolsos NÃO são oferecidos nas seguintes situações:</h3>
+                    <ul>
+                        <li>Exclusão voluntária da conta</li>
+                        <li>Cancelamento de assinatura por parte do usuário</li>
+                        <li>Uso parcial do período de assinatura</li>
+                        <li>Mudança de plano para categoria inferior</li>
+                        <li>Insatisfação com o serviço após o período de teste</li>
+                    </ul>
+
+                    <h3>Reembolsos PODEM ser considerados em casos excepcionais:</h3>
+                    <ul>
+                        <li>Cobrança indevida ou duplicada</li>
+                        <li>Falha técnica grave que impeça o uso do serviço</li>
+                        <li>Violação dos termos por parte da Beyond Tech (I.S.)</li>
+                    </ul>
+
+                    <div class="highlight-blue">
+                        <p>
+                            <strong>Solicitação de Reembolso:</strong> Casos excepcionais devem ser 
+                            reportados em até 7 dias através do email: 
+                            <a href="mailto:help@glorychat.ai" class="contact-link">help@glorychat.ai</a>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>6. Uso Permitido e Proibido</h2>
+                    <div>
+                        <p><strong>Permitido:</strong></p>
+                        <p style="margin-left: 1rem;">Uso pessoal para orientação espiritual e crescimento na fé.</p>
+                    </div>
+                    <div>
+                        <p><strong>Proibido:</strong></p>
+                        <ul>
+                            <li>Uso comercial não autorizado</li>
+                            <li>Interferência na funcionalidade do app</li>
+                            <li>Comportamento abusivo ou desrespeitoso</li>
+                            <li>Falsificação de identidade</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>7. Privacidade de Dados</h2>
+                    <div class="grid grid-2">
+                        <div class="card card-red">
+                            <h4>❌ NÃO armazenamos:</h4>
+                            <ul>
+                                <li>Suas conversas com a IA</li>
+                                <li>Dados do seu cartão de crédito</li>
+                            </ul>
+                        </div>
+                        <div class="card card-green">
+                            <h4>✅ Armazenamos apenas:</h4>
+                            <ul>
+                                <li>Suas anotações pessoais no app</li>
+                                <li>Seus propósitos e objetivos espirituais</li>
+                                <li>Dados básicos de conta (nome, email, denominação)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>8. Limitação de Responsabilidade</h2>
+                    <p>
+                        A IA fornece orientação baseada na Bíblia, mas não substitui aconselhamento 
+                        pastoral, religioso ou médico profissional.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>9. Lei Aplicável</h2>
+                    <p>
+                        Regido pelas leis brasileiras, em conformidade com a LGPD.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>10. Contato</h2>
+                    <p>
+                        Para dúvidas: 
+                        <a href="mailto:help@glorychat.ai" class="contact-link">help@glorychat.ai</a>
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
