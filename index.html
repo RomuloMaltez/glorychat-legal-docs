@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GloryChat.ai - Documentos Legais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            padding: 1rem 1.5rem;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .intro h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+        
+        .intro p {
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+        
+        .document-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .document-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .document-card:hover {
+            border-color: #d4a846;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transform: translateY(-1px);
+        }
+        
+        .document-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 0.75rem;
+        }
+        
+        .document-card p {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+        
+        .document-card .date {
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+        
+        .footer {
+            padding: 2rem;
+            text-align: center;
+            background-color: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .footer p {
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 1rem;
+            }
+            
+            .intro h2 {
+                font-size: 1.5rem;
+            }
+            
+            .document-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .document-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📋 GloryChat.ai - Documentos Legais</h1>
+        </header>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>Documentos Legais</h2>
+                <p>Transparência e conformidade legal para nossos usuários</p>
+            </div>
+            
+            <div class="document-grid">
+                <a href="privacy-policy.html" class="document-card">
+                    <h3>🔒 Política de Privacidade</h3>
+                    <p>
+                        Como coletamos, usamos e protegemos suas informações pessoais 
+                        de acordo com a LGPD (Lei Geral de Proteção de Dados).
+                    </p>
+                    <div class="date">Última atualização: Maio de 2025</div>
+                </a>
+                
+                <a href="terms-of-service.html" class="document-card">
+                    <h3>📄 Termos de Uso</h3>
+                    <p>
+                        Condições de uso do aplicativo, planos de assinatura, 
+                        política de reembolso e exclusão de conta.
+                    </p>
+                    <div class="date">Última atualização: Junho de 2025</div>
+                </a>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p><strong>Beyond Tech (I.S.)</strong></p>
+            <p>Para dúvidas sobre privacidade ou termos de uso:</p>
+            <p><a href="mailto:help@glorychat.ai">help@glorychat.ai</a></p>
+        </footer>
+    </div>
+</body>
+</html>
